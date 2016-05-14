@@ -1,90 +1,59 @@
-# defi-twitter
+## defi-twitter
 
-[![js-standard-style](https://img.shields.io/badge/code%20style-standard-brightgreen.svg)](http://standardjs.com/)
+A play Node.js shooter with API twitter for #hashtags with client/server concept.
 
-> the best
+## Client (app)
+
+Use pixi.js as game engine and use socket.io for communication client/server.
+
+## Server
+
+Run on Node.js and use socket.io for communcation server/client.
 
 
-## Develop
+### Install 
 
-#### Prerequisites
+Be sure to have npm installed
+$ npm -v /* Give Your Version Of NPM if not you need to install npm */
+$ make sudo npm install npm -g
 
-* `node >= v4.0.0` ([use nvm](https://github.com/creationix/nvm))
-* `webpack` ([download here](https://github.com/webpack/webpack)) (install `npm install webpack -g`)
-* Follow [JavaScript Standard Style](https://github.com/feross/standard) and use a [text editor plugin](https://github.com/feross/standard#text-editor-plugins)
+Be sure to have node.js and gulp installed.
+$ node -v
+$ gulp -v
 
-#### Stack
+/* If not make */
 
-- [Neodymium](https://github.com/soixantecircuits/neodymium) with front-end, electron, FSM and native API support. Some work will have to be done on the router.
-- [machina.js](https://github.com/ifandelse/machina.js) as a FSM library.
-- Some of [the libs we use](https://github.com/soixantecircuits/awesome-app-js).
-- We use [standard](https://github.com/feross/standard) coding style and now you do too 😉.
+$ npm install -g node.js
+$ npm install -g gulp
 
-#### Install dependencies
-
-```
-$ npm install
-```
-*(Yeoman should have done this for you)*
-
-#### Workflow
-
-We follow [a successful git branching model](http://nvie.com/posts/a-successful-git-branching-model/).
-
-We also version our apps, following [semver](http://semver.org/). You pass a version when merging `dev` into `master`. Obviously, you'll update version number and tags in the `master` branch.
-To do so, [npm is here](https://docs.npmjs.com/cli/version) to help you out. **Make sure your `git` working directory is clean**.
-
-```
-$ npm version major|minor|patch
-```
-
-You can also run `$ npm test` before you commit to make sure you don't give anyone a good reason to blame you.
-
-#### Run
-
-##### In the browser
-
-```
-$ gulp dev
-```
-And then rendez-vous at `http://127.0.0.1:6060`.
-
-##### In electron
-
-```
-$ gulp dev
-```
-
-And in an other shell window:
-
-```
-$ npm start
-# For Windows users :
-$ npm start-win
-```
-
-#### In node
-```
-$ npm start
-```
+! Yet you have the minimum ! 
 
 ## Build
 
-We use [electron-packager](https://github.com/maxogden/electron-packager).
+To build and run this project you will need node.js and gulp previously installed if not go back to ### Install.
 
-```
-$ webpack
-$ npm run build-osx # osx 64bits app
-$ npm run build-linux # linux 64bits app
-$ npm run build-win # windows 64bits app
-```
+Next:
 
-## Troubleshooting
+1. Be sure to be in root directorie Defi-twitter/
 
-#### Webpack
+2. $ npm install
 
-- [This howto](https://github.com/petehunt/webpack-howto) also explains a lot of useful things.
-- [This page](https://github.com/webpack/docs/wiki/shimming-modules) too.
+3. $ gulp /* Server listening on port : 8080*/
+
+3bis /* If gulp don't work or don't installed use */
+   $ node server.js
+
+4. $	  google-chrome http://localhost:8080/
+   or $	  firefox http://localhost:8080/
+   or open your browser and paste http://localhost:8080/
+
+5. Enjoy!
+
+## Credits
+
+This project is not finished so he can change in the future.
+
+If you have a problem contact me at: kevin.xforce@gmail.com
 
 ## License
 

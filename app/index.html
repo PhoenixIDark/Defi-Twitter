@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Twitter-Defi</title>
+		<link rel="stylesheet" type="text/css" href="css/main.css">
+	</head>
+	<body>
+		<h1>Twitter-Defi</h1>
+		
+		<p id="loading">Loading, please wait...</p>
+		<div id="gameContainer" class="hide">
+			<p><span id="playersQuantity"></span></p>
+			<div id="game"></div>	
+		</div>
+
+		<p><a href="https://github.com/PhoenixIDark/Defi-Twitter.git" target="_blank" title="Source code @ GitHub">source</a></p>
+		<p>0.1.0</p>
+
+		<audio id="audioFire" src="assets/audio/twitter-fire.wav"></audio>
+		
+		<!-- @if NODE_ENV='production' -->
+		<script data-main="main-built" src="lib/requirejs/require.js"></script>
+		<!-- @endif -->
+		<!-- @if NODE_ENV!='production' -->
+		<script data-main="scripts/main" src="lib/requirejs/require.js"></script>
+		<!-- @endif -->
+	</body>
+</html>
